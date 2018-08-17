@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "10" # stable
+  - "8" # LTS
+  - "6" # maintenance
+notifications:
+  email: false

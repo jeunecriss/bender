@@ -1,25 +1,48 @@
 {
-  "name": "bender",
-  "version": "0.0.0",
-  "private": true,
-  "author": "Maxim",
-  "description": "A simple helpful robot for your Company",
-  "dependencies": {
-    "hubot": "^3.1.1",
-    "hubot-diagnostics": "^1.0.0",
-    "hubot-google-images": "^0.2.7",
-    "hubot-google-translate": "^0.2.1",
-    "hubot-help": "^1.0.1",
-    "hubot-heroku-keepalive": "^1.0.3",
-    "hubot-maps": "0.0.3",
-    "hubot-pugme": "^0.1.1",
-    "hubot-redis-brain": "^1.0.0",
-    "hubot-rules": "^1.0.0",
-    "hubot-scripts": "^2.17.2",
-    "hubot-shipit": "^0.2.1",
-    "hubot-slack": "^4.5.4"
+  "name": "hubot-pager-me",
+  "description": "PagerDuty integration for Hubot ",
+  "version": "3.0.0",
+  "author": "Josh Nichols <technicalpickles@github.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "pagerduty"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-pager-me.git"
   },
-  "engines": {
-    "node": "0.10.x"
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-pager-me/issues"
+  },
+  "peerDependencies": {
+    "hubot": ">=2 <10 || 0.0.0-development"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "moment-timezone": "~0.5.21",
+    "scoped-http-client": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coffee-script": "1.12.7",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-mocha-test": "~0.13.3",
+    "grunt-release": "~0.14.0",
+    "hubot": "2.x",
+    "husky": "^0.14.3",
+    "matchdep": "~2.0.0",
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.3",
+    "sinon-chai": "^3.2.0"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test",
+    "precommit": "npm test",
+    "prepush": "npm test"
   }
 }
