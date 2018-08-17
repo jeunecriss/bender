@@ -1,3 +1,3 @@
 node_modules
-.node-version
-.idea
+.DS_Store*
+.hubot_history
